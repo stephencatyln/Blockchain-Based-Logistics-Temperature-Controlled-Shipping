@@ -1,0 +1,29 @@
+[project]
+name = 'Blockchain-Based-Logistics-Temperature-Controlled-Shipping'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.carrier-verification]
+path = 'contracts/carrier-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.compliance-verification]
+path = 'contracts/compliance-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.temperature-monitoring]
+path = 'contracts/temperature-monitoring.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
